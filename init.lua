@@ -731,6 +731,11 @@ require('lazy').setup({
         },
         completion = { completeopt = 'menu,menuone,noinsert' },
 
+        -- ghost text is used by copilot
+        experimental = {
+          ghost_text = true,
+        },
+
         -- For an understanding of why these mappings were
         -- chosen, you will need to read `:help ins-completion`
         --
@@ -908,6 +913,7 @@ require('lazy').setup({
       require('neoscroll').setup {}
     end,
   },
+  'github/copilot.vim',
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
